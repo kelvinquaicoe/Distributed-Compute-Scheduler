@@ -8,13 +8,13 @@ A distributed-systems project that simulates CPU/GPU job scheduling across worke
 - Compare FIFO, priority, shortest-job-first (SJF), and backfill scheduling policies.
 - Simulate worker capacity, job dispatch, completion, and worker failures.
 - Inspect job states and worker utilization through the API and dashboard.
-- Run repeatable benchmark workloads to compare scheduling outcomes.
+- Follow a documented protocol for measuring policy performance with reproducible workloads.
 
 > **Benchmark honesty:** Treat figures such as 10,000+ jobs, 20 workers, +24% GPU utilization, -37% queue wait, and 99.8% completion under failures as targets until you have run and saved reproducible benchmark results. Do not present them as verified measurements without evidence.
 
 ## Tech stack
 
-Python, FastAPI, Pydantic, React, TypeScript, Vite, Docker Compose. The initial simulator uses in-memory state and simulated job execution; it does not launch real GPU workloads.
+Python, FastAPI, Pydantic, React, TypeScript, Vite, Docker Compose. The initial simulator uses in-memory state and simulated job execution; it does not launch real GPU workloads. A full benchmark runner and database-backed persistence are future improvements.
 
 ## Quick start: backend
 
